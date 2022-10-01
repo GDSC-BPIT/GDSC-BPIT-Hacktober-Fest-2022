@@ -1,0 +1,35 @@
+* {
+    background-color: #E7F4E5;
+    color: #2F4858;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#tracker_heading {
+    font-size: 50px;
+}
+
+
+#money {
+    font-size: 100px;
+    margin: 0px;
+    width: auto;
+}
+
+.input {
+    width: 300px;
+    height: 25px;
+}
+
+.button {
+    background-color: rgb(81, 175, 81);
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    color: antiquewhite;
+}
+
+#debit {
+    background-color: rgb(230, 62, 62);
+}
