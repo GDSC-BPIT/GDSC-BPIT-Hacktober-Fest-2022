@@ -43,16 +43,16 @@ To deploy this project run
 * Now to start working on it, you need to clone the repository in your local machine. Open your command terminal and paste the following.
 
 ```git
-  git clone https://github.com/<your-username>/IOSD-BPIT-Hacktoberfest-2022.git
+  git clone https://github.com/<your-username>/GDSC-BPIT-Hacktoberfest-2022.git
 ```
 ### Step 3 : Add upstream 
 ```git
-git remote add upstream https://github.com/IOSD/IOSD-BPIT-Hacktoberfest-2022.git
+git remote add upstream https://github.com/GDSC-BPIT/GDSC-BPIT-Hacktoberfest-2022.git
 ```
 ### Step 4 : Creating Branch
 
 ```bash
-  cd IOSD-BPIT-Hacktoberfest-2022
+  cd GDSC-BPIT-Hacktoberfest-2022
   git checkout -b <your-name>
 
 ```
