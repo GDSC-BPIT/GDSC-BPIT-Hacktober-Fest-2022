@@ -1,0 +1,43 @@
+a{color: green;}
+nav a{
+	padding: 10px 0px;
+	display: inline-block;
+
+	width: 150px;
+	height: 5vh;
+	color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+
+
+
+
+
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	
+	background-color:#303030 ;
+	height: 40px;
+	border: 0;
+	
+}
+.pad{}
+
+nav li{
+	display: inline;
+	text-align: center;
+
+}
+body{margin: 0;}
+
+.center{padding: 10px 300px}
+#pad{
+color: green;
+float:left;}
+#pad1{
+color: blue;
+float:left;}
