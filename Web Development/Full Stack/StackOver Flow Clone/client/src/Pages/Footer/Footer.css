@@ -1,0 +1,27 @@
+.footer {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    background-color: #FBF3D5;
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.footer .socials .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+}
