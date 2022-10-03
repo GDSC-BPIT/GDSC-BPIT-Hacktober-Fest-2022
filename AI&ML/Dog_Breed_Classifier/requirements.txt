@@ -1,0 +1,7 @@
+tensorflow >= 2.9.1    # Use tensorflow-cpu if you don't have gpu
+tensorflow_datasets >= 4.6.0
+scipy >= 1.9.1
+matplotlib >= 3.5.3
+
+# Note:- These requirements are for 'dog_breed_classifier.ipynb'.
+#        If you intend to use only 'use_classifier.py' script, you only need to install 'tensorflow' and 'matpoltlib'.
