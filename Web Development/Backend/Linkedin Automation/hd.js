@@ -1,6 +1,6 @@
 const loginLink = "https://www.linkedin.com/home";
-let email = "zirtekaydi@vusra.com";
-let password = "pepcoding123";
+let email = "xyz"; // your email id
+let password = "xyz"; // your password
 
 let puppeteer = require("puppeteer");
 (async function () {
