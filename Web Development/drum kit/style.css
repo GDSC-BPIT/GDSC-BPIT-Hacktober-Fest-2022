@@ -1,0 +1,46 @@
+body
+{
+  background-color:#FADDF3;
+  text-align:center;
+  font-family:cursive;
+  font-size: 26px;
+}
+.Button
+{
+  width: 200px;
+  height: 200px;
+  border: 10px solid #C3D74D;
+  border-radius: 20px;
+  text-shadow: 4px 0 #94AAD3;
+  color:blue;
+  font-family:cursive;
+  font-size: 130px
+}
+.pressed{
+    box-shadow: 10px 10px 10px 10px #fde3a8;
+    text-shadow: 4px 0 #fde3a8;
+}
+.A
+{
+  background: url('A.png') no-repeat 4px;
+}
+.S
+{
+  background: url('B.png') no-repeat 4px;
+}
+.D
+{
+  background: url('C.png') no-repeat 3px;
+}
+.F
+{
+  background: url('D.png') no-repeat 4px;
+}
+.G
+{
+  background: url('E.png') no-repeat 4px;
+}
+.H
+{
+  background: url('F.png') no-repeat 4px;
+}
