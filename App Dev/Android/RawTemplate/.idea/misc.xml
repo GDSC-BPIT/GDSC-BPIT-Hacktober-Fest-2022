@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/RawTemplate/app/src/main/res/drawable/corner_shape.xml" value="0.2905" />
+        <entry key="..\:/RawTemplate/app/src/main/res/drawable/editfield.xml" value="0.3065" />
+        <entry key="..\:/RawTemplate/app/src/main/res/drawable/ripple_blue.xml" value="0.3065" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/fragment_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/fragment_second.xml" value="0.36666666666666664" />
+        <entry key="..\:/RawTemplate/app/src/main/res/layout/fragment_third.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/corner_shape.xml" value="0.167" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/editfield.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/email.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/forgot_password_illustration.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/ic_home.xml" value="0.1" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/ic_launcher_background.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/ic_profile.xml" value="0.154" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/ic_settings.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/ic_status.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/indicator_active_background.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.1" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/lock.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/next_button.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/onboarding_screen_2.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/onboarding_screen_3.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/primary_button.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/ripple_blue.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/sign_up_illustration.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/visibility_off.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/drawable/welcome_illustration.xml" value="0.197" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_forgot_password.xml" value="0.25" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_splashscreen.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/activity_users.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/fragment_profile.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/fragment_third.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/layout/onboarding_item_container.xml" value="0.203125" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+        <entry key="..\:/Users/binay/AndroidStudioProjects/RawTemplate/app/src/main/res/menu/menu.xml" value="0.203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
