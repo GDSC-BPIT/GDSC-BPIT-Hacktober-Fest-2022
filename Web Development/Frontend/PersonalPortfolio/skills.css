@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #34568B;
+
+
+}
+
+.waviy {
+    position: relative;
+
+
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+
+nav a {
+    text-decoration: none;
+    padding: 8px;
+    text-transform: capitalize;
+    color: white;
+
+
+}
+
+nav a:hover {
+    border: 2px solid white;
+    background: black;
+
+}
+
+button a {
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+
+}
+
+img {
+    padding-top: 4px;
+    height: 17px;
+    width: 15px;
+}
+
+.container {
+  
+    text-align: center;
+
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    line-height: 280px;
+    flex-wrap: wrap;
+}
+
+.skills {
+    border: 2px solid black;
+    background: #F7CAC9;
+}
+
+.Tech-Stack {
+    margin-top: 10px;
+    padding-top: 20px;
+    border: 2px solid black;
+    background: #955251;
+}
