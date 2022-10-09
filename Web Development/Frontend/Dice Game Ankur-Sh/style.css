@@ -10,7 +10,13 @@
 }
 
 body {
-    background-color: #393e46;
+    background-image: linear-gradient(
+        rgb(61, 61, 61) 0%,
+        rgb(83, 219, 165) 50%,
+        rgb(83, 219, 165) 51%,
+
+        rgb(61, 61, 61) 100%
+    );
 }
 
 h1 {
@@ -18,16 +24,18 @@ h1 {
     font-family: "Lobster", cursive;
     text-shadow: 5px 0 #232931;
     font-size: 8rem;
-    color: #4ecca3;
+    color: #4a008b;
 }
 
 p {
     font-size: 2rem;
-    color: #4ecca3;
+    color: #9508c0;
     font-family: "Indie Flower", cursive;
 }
 
 img {
+    position: relative;
+    top: 100px;
     width: 80%;
 }
 
@@ -37,3 +45,4 @@ footer {
     text-align: center;
     font-family: "Indie Flower", cursive;
 }
+
