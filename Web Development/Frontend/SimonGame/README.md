@@ -1,6 +1,8 @@
 # Simon-Game
 Get ready to watch, remember, repeat!  Experience the fun as you repeat the patterns and advance to higher levels. 
+<br><br>
 <img src="readmeImage.png" alt="Simon game preview">
+
 ### Features
 
 * In this project the buttons flash and the user is to copy the sequence and click the correct button.
@@ -9,8 +11,7 @@ Get ready to watch, remember, repeat!  Experience the fun as you repeat the patt
 
 ### Technologies Used
 
-JQuery - I have used jQuery to simplify DOM manipulation
-Bootsrap - I have used bootsrap for icons and effects
-Font Awesome - I have used font awesome to add some different font onto my website.
-CSS - For styling the game
-HTML - For the elements of the game
+JQuery - I have used jQuery to simplify DOM manipulation <br>
+Font Awesome - I have used font awesome to add some different font onto my website. <br>
+CSS - For styling the game <br>
+HTML - For the elements of the game <br>
