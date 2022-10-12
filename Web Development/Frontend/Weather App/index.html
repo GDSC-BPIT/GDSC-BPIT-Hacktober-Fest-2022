@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    
     <link rel="stylesheet" href="custom.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="row" style="text-align: center;">
+          <div class="row" style="text-align: center">
+            <h1 class="heading">Weather App</h1>
             <form action="">
-                <input type="search" id="search" placeholder="Search by city name">
+              <input
+                type="search"
+                id="search" oninput="refresh"
+                placeholder="Search by city name"
+              />
             </form>
-        </div>
-        <div class="row" id="weather">
-            <!-- <div>
-                <img src="https://openweathermap.org/img/wn/04n@2x.png" alt="">
-            </div>
-            <div>
-                <h2>32 ℃</h2>
-                <h4> Clear </h4>
-            </div> -->
+          </div>
+
+        <div class="weatherAbout">
+            
+              <div class="image-div">
+                <img class="backimage" src="" alt="">
+                  <div class="" id="time">
+                     <p></p>
+
+                  </div>
+                  <div class="in-img-icon">
+                    <img class="icon" src="" alt="" />
+                  </div>
+                  <div class="in-img-text">
+                    <h2></h2>
+                    <h4></h4>
+                  </div>
+                
+              </div>
         </div>
     </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
