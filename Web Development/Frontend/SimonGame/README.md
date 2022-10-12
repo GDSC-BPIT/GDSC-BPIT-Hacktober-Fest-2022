@@ -1,7 +1,7 @@
 # Simon-Game
 Get ready to watch, remember, repeat!  Experience the fun as you repeat the patterns and advance to higher levels. 
 <br><br>
-<img src="readmeImage.png" alt="Simon game preview">
+<img style="width:600px" src="readmeImage.png" alt="Simon game preview">
 
 ### Features
 
