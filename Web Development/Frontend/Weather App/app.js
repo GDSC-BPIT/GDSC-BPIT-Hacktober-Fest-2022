@@ -66,7 +66,6 @@ function time(city){
     var nameWithTime = cityName+","+ " As of "+time+" IST";
     $("#time").addClass("time");
     $(".time p").html(nameWithTime);
-
 }
 
 form.submit(function(event){
