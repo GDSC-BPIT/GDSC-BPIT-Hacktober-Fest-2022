@@ -18,7 +18,7 @@ Working
 # [DEMO](https://rishikavishnoi.github.io/Resume-Builder/)  
 ** Note :- profile photo field is required **
 
-## contibute under SSOC 
+## contibute under HacktoberFest'2022
 
 ![screenshot](ss.png)
 ![screenshot](ss2.png)
