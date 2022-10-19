@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DekkhO</string>
+    <string name="dekkho">DekkhO</string>
+    <string name="category">Category</string>
+    <string name="new_heading">New Heading</string>
+    <string name="sub_heading">Sub Heading</string>
+</resources>
