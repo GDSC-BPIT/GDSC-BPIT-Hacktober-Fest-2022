@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ScribbleTheUltimateNotesJunction" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red2</item>
+        <item name="colorPrimaryVariant">@color/pink2</item>
+        <item name="colorOnPrimary">@color/colorDefaultNoteColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red2</item>
+        <item name="colorSecondaryVariant">@color/pink2</item>
+        <item name="colorOnSecondary">@color/colorDefaultNoteColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.ScribbleTheUltimateNotesJunction.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ScribbleTheUltimateNotesJunction.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.ScribbleTheUltimateNotesJunction.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="ProgressBar">
+        <!-- Primary brand color. -->
+        <item name="colorSecondary">@color/teal</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Modal</item>
+    </style>
+    <style name="Modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
+    </style>
+</resources>
