@@ -1,0 +1,358 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    font-size: 14;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+.title-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.menu-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+
+.menu-item:hover {
+    background-color: #083d20;
+    cursor: pointer;
+}
+
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.menu-bar {
+    height: 5vh;
+    background-color: #107c41;
+    display: flex;
+}
+
+.menu-icon-bar {
+    height: 6vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.menu-icon.selected {
+    background-color: lightgray;
+}
+
+.selector {
+    height: 30px;
+    font-size: 16px;
+}
+
+.font-family-selector {
+    width: 150px;
+    font-family: Calibri;
+}
+
+.formula-bar {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.formula-editor {
+    height: 3.5vh;
+    width: 70%;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.selected-cell {
+    width: 120px;
+}
+
+.function-sign {
+    height: 3vh;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formula-input {
+    width: calc(100vw - 160px);
+    outline-color: #107c41;
+}
+
+.data-container {
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-all {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.col-container {
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+    display: flex;
+    overflow: hidden;
+}
+
+.row-container {
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.cell-container {
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+    overflow: scroll;
+}
+
+.sheet-bar {
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.scroller {
+    width: 70px;
+}
+
+.icon-left-scroll, .icon-right-scroll {
+    font-size: 30px; 
+}
+
+.icon-left-scroll:hover, .icon-right-scroll:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.icon-add {
+    width: 40px;
+    color: #107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon-add:hover {
+    transform: (1.2);
+    cursor: pointer;
+}
+
+.sheet-tab-container {
+    border: 1px solid lightgray;
+    width: calc(100vw - 110px);
+    display: flex;
+}
+
+.sheet-tab {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid lightgray;
+    width: 80px;
+    font-weight: 600;
+}
+
+.sheet-tab:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.sheet-tab.selected {
+    border-bottom: 4px solid #107c41;
+}
+
+.sheet-tab.selected:hover {
+    cursor: default;
+    background-color: #fff;
+}
+
+.col-name {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    font-weight: "bold";
+}
+
+.row-name {
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.cell-row {
+    display: flex;
+}
+
+.input-cell {
+    min-width: 100px;
+    min-height: 25px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    outline-color: #107c41;
+    font-size: 14px;
+    font-family: Calibri;
+}
+
+.input-cell.selected {
+    border: 2px solid #107c41;
+}
+
+.input-cell.top-cell-selected {
+    border-top: none;
+}
+
+.input-cell.bottom-cell-selected {
+    border-bottom: 1px solid lightgray;
+}
+
+.input-cell.right-cell-selected {
+    border-right: 1px solid lightgray;
+}
+
+.input-cell.left-cell-selected {
+    border-left: none;
+}
+
+.color-picker {
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    border: none;
+    padding: 0px;
+    top: 30px;
+    left: 9px;
+    cursor: pointer;
+}
+
+.icon-color-fill ,.icon-color-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.sheet-options-modal {
+    position: absolute;
+    bottom: 4vh;
+    background-color: #fff;
+    height: 60px;
+    width: 70px;
+    box-shadow: 0 0 3px 1px lightgray;
+}
+
+.sheet-rename, .sheet-delete {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheet-delete:hover, .sheet-rename:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.sheet-rename-modal {
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    top: calc(100vh/2 - 90px);
+    left: calc(100vw/2 - 150px);
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 3px 1px lightgray;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 20px;
+}
+
+.new-sheet-name {
+    height: 26px;
+    font-size: 18px;
+    outline-color: #107c41; 
+}
+
+.submit-button, .cancel-button {                
+    background-color: lightgray;
+    padding: 8px;
+}
+
+.submit-button:hover, .cancel-button:hover {
+    cursor: pointer;
+    background-color: #107c41;
+    color: #fff;
+}
+
+/*add confirmation modal for deletion of sheet - are you sure you want to delete?*/
+/*add arrow keys functioning to select prev and next sheets*/
+/*cut, copy, paste in cells*/
