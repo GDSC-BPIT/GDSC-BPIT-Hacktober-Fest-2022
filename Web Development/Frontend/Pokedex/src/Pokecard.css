@@ -1,0 +1,14 @@
+.Pokecard{
+    background-color: rgb(196, 195, 195);
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 7px 10px 12px -5px rgb(56, 54, 54);
+}
+
+.Pokecard-image{
+    height: 50px;
+    width: 50px;
+}

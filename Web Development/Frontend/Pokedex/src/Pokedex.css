@@ -1,0 +1,16 @@
+.Pokedex{
+    height: 640px;
+    width: 1100px;
+    background-color: rgb(216, 215, 215);
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.Pokedex-title{
+    color: rgb(20, 20, 20);
+    padding-top: 10px;
+}
+
+body{
+    background-color: rgb(216, 215, 215);
+}
