@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Scribble-The Ultimate Notes Junction</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="my_notes">My Notes</string>
+</resources>

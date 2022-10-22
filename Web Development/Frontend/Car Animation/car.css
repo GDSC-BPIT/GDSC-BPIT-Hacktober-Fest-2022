@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.bground{
+
+    height:100vh;
+    width: 100%;
+  background-image: url(backs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  
+
+}
+.tracks{
+
+    height:30vh;
+    width:800vw;
+  background-image: url(track.png);
+  background-repeat: repeat-x;
+  
+  position: absolute;
+  top:80vh;
+  animation: backtrack linear 11s  infinite;
+  
+  
+
+
+
+}
+.cars{
+
+    height:30vh;
+    width:50%;
+  background-image: url(car_body.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top:65vh;
+  left:100px;
+  animation:shake linear .6s infinite;
+
+
+}
+
+.tyre img{
+ 
+    width:130px;
+  
+  position: relative;
+  top:94px;
+  left:483px;
+   animation: rotation linear .6s infinite;
+  
+
+}
+.tyres img {
+  width: 151px;
+  position: relative;
+  left: 88px;
+  top: -54px;
+  animation: rotation linear .6s infinite;
+}
+
+
+@keyframes rotation{
+
+100%{
+  transform: rotate(360deg);
+}
+
+}
+
+@keyframes backtrack{
+
+  100%{
+
+transform:translateX(-500vw);
+
+  }
+}
+
+body{
+  overflow: hidden;
+  animation:itsbody linear 6s infinite;
+}
+@keyframes shake {
+
+       0%{
+         transform: translateY(-5px);
+       }
+
+       50%{
+         transform:translateY(5px);
+
+       }
+  
+       100%{
+         transform:translateY(-5px);
+       }
+}
+@keyframes itsbody{
+
+
+
+       0%{
+         transform: translateY(-45px);
+       }
+
+       50%{
+         transform:translateY(45px);
+
+       }
+  
+       100%{
+         transform:translateY(-45px);
+       }
+
+
+
+}

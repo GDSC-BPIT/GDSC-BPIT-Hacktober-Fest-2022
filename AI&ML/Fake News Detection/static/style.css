@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: linear-gradient(color, color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+    padding:7%;
+    color:#f3bda1;
+}
+
+.body-wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+h2{
+    font-size:35px;
+    color:#fdca40;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+p{
+    font-size:20px;
+    letter-spacing:1px;
+    margin-top:15px;
+}
+
+textarea{
+    margin-top:20px;
+    width:500px;
+    height:200px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    padding:5px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:0.8px;
+}
+
+button{
+    width:150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color:#fdca40;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s;
+    margin-left: 35%;
+    font-size:16px;
+}
+button:hover{
+    background-color:#ce9f1f
+}
+
+.output{
+    margin:30px;
+}
+
+
+@media only screen and (max-width: 550px){
+    textarea{
+    width:400px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    textarea{
+        width:300px;
+    }
+    p{
+        font-size:16px;
+        margin-top:10px;
+    }
+    button{
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    textarea{
+        width:250px;
+    }
+    p{
+        font-size:16px;
+        margin-top:10px;
+    }
+    button{
+        margin-left: 35%;
+        width:100px;
+    }
+}

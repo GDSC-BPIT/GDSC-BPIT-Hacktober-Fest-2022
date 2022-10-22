@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="header">
+            <h2>Fake News Detection</h2>
+            <p>An ML app to figure out given news headline is <strong>Fake</strong> or <strong>Legit</strong></p>
+            <p>Enter any news paragraph or headline in given textarea and analyze it.</p>
+        </div>
+        <form action="{{url_for('predict')}}" method="POST">
+            <textarea type="text" name='message' placeholder="Add news here ..."></textarea><br>
+            <button type='submit'>Predict</button>
+        </form>
+        <div class="output">
+            <span class="outputClass">{{prediction_text}}</span>
+        </div>
+    </div>
+</body>
+</html>

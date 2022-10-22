@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.scribble_theultimatenotesjunction.MainActivity" >
+    <item android:id="@+id/ic_delete"
+        android:title="Delete"
+        android:icon="@drawable/delete_ic"
+        app:showAsAction="always"/>
+</menu>
