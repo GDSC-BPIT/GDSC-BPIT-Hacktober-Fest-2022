@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>GALLERY</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="action-bar">
+            <span id="saveAlbum" class="material-icons">save</span>
+            <span id="addAlbum" class="material-icons">add</span>
+            <span id="deleteAlbum" class="material-icons">remove</span>
+            <span id="importAlbum" class="material-icons">upload</span>
+            <span id="exportAlbum" class="material-icons">download</span>
+            <span id="playAlbum" class="material-icons">smart_display</span>
+            <select id="selectAlbum">
+                <option value="-1">Select an album</option>
+            </select>
+            <input type="file" multiple="false" id="uploadFile" />
+        </div>
+        <div id="content">
+            <div id="content-list">
+                <div id="new-slide">
+                    New Slide
+                </div>
+                <div id="slide-list">
+                    
+                </div>
+            </div>
+            <div id="content-details">
+                <div id="create-slide">
+                    <div>
+                        <input id="txtSlideImage" type="text" placeholder="IMAGE"/>
+                    </div>
+                    <div>
+                        <input id="txtSlideTitle" type="text" placeholder="TITLE"/>
+                    </div>
+                    <div>
+                        <textarea id="txtSlideDesc" cols="30" rows="10" placeholder="DETAILS"></textarea>
+                    </div>
+                    <div>
+                        <button id="btnSaveSlide">Save Slide</button>
+                    </div>
+                </div>
+                <div id="show-slide">
+                    
+                </div>
+            </div>
+            <div id="content-details-overlay">
+                <div id="text">Either create a new slide or select a slide</div>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="text">Please select an album</div>
+        </div>
+
+        <div id="play-overlay">
+            <div id="text">PLAYING ALBUM</div>
+        </div>
+        <template id="allTemplates">
+            <option purpose="new-album"></option>
+            <div class="slide">
+                <div class="title"></div>
+                <div class="slide-content">
+                    <div class="desc"></div>
+                    <img src="" />
+                </div>
+            </div>
+            <div class="slide-in-view">
+                <div class="slide-header">
+                    <div class="title"></div>
+                    <span purpose="edit" class="material-icons">edit</span>
+                    <span purpose="delete" class="material-icons">delete</span>
+                </div>
+                <div class="slide-content">
+                    <div class="desc"></div>
+                    <img src="" />
+                </div>
+            </div>
+        </template>
+        <script type="text/javascript" src="album.js"></script>
+    </body>
+</html>
