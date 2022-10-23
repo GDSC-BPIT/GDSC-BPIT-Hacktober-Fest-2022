@@ -1,0 +1,142 @@
+body
+{
+  font-family: sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+#title
+{
+  font-size:40px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 0px;
+  letter-spacing: 1px;
+  position: relative;
+
+}
+
+.invalid
+{
+  font-size: 15px;
+  background-color: black;
+  font-family: monospace;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  width: 120px;
+  height: 20px;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+
+
+hr
+{
+  height: 1px;
+  width: 100%;
+  background-color: lightgrey;
+  border: 0;
+}
+
+#board
+{
+  width: 360px;
+  height: 360px;
+  margin-top: 3px;
+  display: flex; /*to keep tile within the box*/
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.tile
+{
+border:0.75px solid lightgrey;
+width: 58px;
+height: 55px;
+margin: 2.5px;
+color: black;
+font-size:36px;
+justify-content: center;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+font-weight: bold;
+}
+
+.present
+{
+  background-color: #d0b45c !important;
+  color: white;
+  border-color: white;
+
+}
+
+.correct
+{
+background-color: #70ac64 !important;
+color: white;
+border-color: white;
+}
+
+.absent
+{
+  background-color: #807c7c !important;
+  color: white;
+  border-color: white;
+}
+
+.keyboard-row
+{
+  width: 440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keyboard-mid-row
+{
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-tile
+{
+  border:1px solid lightgrey;
+  width: 36px;
+  height: 55px;
+  margin: 1px;
+  font-size:15px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #d8d4dc;
+}
+
+.enter-key-tile
+{
+  border:1px solid lightgrey;
+  width: 76px;
+  height: 55px;
+  margin: 1px;
+  color: black;
+  font-size:15px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #d8d4dc;
+}
