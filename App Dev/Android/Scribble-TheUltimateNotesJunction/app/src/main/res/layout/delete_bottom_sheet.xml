@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheet"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="7dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/delete_indicator" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="Are you sure you want to delete\n this note?"
+        android:textSize="18dp"
+        android:fontFamily="serif"/>
+
+    <TextView
+        android:id="@+id/delete_no"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/no_delete"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:fontFamily="serif"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/delete_yes"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/yes_delete"
+        android:text="Yes"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textSize="18dp" />
+
+
+</LinearLayout>
