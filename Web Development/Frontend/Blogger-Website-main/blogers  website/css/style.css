@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.navigation {
+  height: 20vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.left {
+  display: flex;
+  font-size: 32px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.left ul {
+  margin: 0px 84px;
+  display: flex;
+  align-items: center;
+}
+.left ul li {
+  list-style: none;
+  margin: 0 2vw;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.left ul li a {
+  font-size: 4vh;
+  text-decoration: none;
+  color: black;
+}
+.left ul li a:hover {
+  color: rgb(94, 93, 92);
+}
+.content-left {
+  /* width: 50%; */
+  font-family: "Baloo Bhai 2", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 33px;
+  z-index: 1;
+}
+.content-right {
+  display: flex;
+  /* width: 50%; */
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  height: 71%;
+  /* width: 50%; */
+  border: 1px solid black;
+  border-radius: 223px;
+}
+.content {
+  margin-top: 7px;
+  margin-bottom: 18px;
+  padding: 9px;
+  height: 55vh;
+
+  /* background-color: rgb(198, 198, 226); */
+  display: flex;
+  position: relative;
+}
+.content::after {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  content: "";
+  background-image: url(../img/man-hands-typing-an-article-on-a-vintage-typewriter-vector.jpg);
+  opacity: 0.25;
+}
+.home-articles {
+  margin-bottom: 23px;
+  margin-top: 15px;
+  /* height: 70vh; */
+  background-color: rgb(255 240 231 / 34%);
+}
+.home-article {
+  display: flex;
+  margin-top: 9px;
+  /* position: absolute; */
+}
+.home-article-img {
+  height: 138px;
+  width: 184px;
+  margin: 6px;
+  display: flex;
+}
+.home-article-content {
+  padding-left: 12px;
+  align-self: center;
+}
+.home-article-content a {
+  color: black;
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: beige;
+}
+.footer p {
+  padding-right: 7px;
+  margin-bottom: 0px;
+}
