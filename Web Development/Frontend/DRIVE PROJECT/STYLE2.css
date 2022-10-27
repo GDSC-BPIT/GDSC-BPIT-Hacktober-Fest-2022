@@ -1,0 +1,44 @@
+/* h1 { */
+/* color:red; */
+/* } */
+
+#buttonaddfolder {
+    border-radius: 10px;
+     background-color: azure;
+     margin-left: 600px;
+     width:200px;
+     padding: 10px;
+      /* cursor aata hai jaise he button per jaoge aaagr cursoe pointer use karoge to */
+      cursor: pointer; 
+    }
+/* is se button ko hilane ke kaam aaega */
+    #buttonaddfolder:hover {
+    transform: scale(1.05); 
+        }  
+#container {
+    border: 1px solid black;
+    display: flex;
+    padding:10px;
+    margin-top: 10px;
+}
+
+.folder {
+    /* border: 1px solid blue; */
+    background-color: teal;
+   height:100px;
+    width:100px;
+    margin:5px;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+div [purpose=name]{
+    margin-top: 50px;
+    color: white;
+}

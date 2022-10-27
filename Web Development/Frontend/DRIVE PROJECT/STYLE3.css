@@ -1,0 +1,62 @@
+
+
+#buttonaddfolder {
+    border-radius: 10px;
+     background-color: azure;
+     margin-left: 600px;
+     width:200px;
+     padding: 10px;
+      cursor: pointer; 
+    }
+
+    #buttonaddfolder:hover {
+    transform: scale(1.05); 
+        }  
+
+
+    #divbreadCrumb{
+        border: 1px solid black;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }    
+
+    .path{
+        background-color: grey;
+        color: black;
+        cursor: pointer;
+        padding: 5px;
+        border-right: 3px solid black;
+    }
+    .path:hover{
+        background-color: white;
+        color: blue;
+        text-decoration: underline;
+    }
+#container {
+    border: 1px solid black;
+    display: flex;
+    padding:10px;
+    margin-top: 10px;
+}
+
+.folder {
+    
+    background-color: teal;
+   height:100px;
+    width:100px;
+    margin:5px;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+div [purpose=name]{
+    margin-top: 50px;
+    color: white;
+}
