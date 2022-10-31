@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Company Registration</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/select2/select2.min.css">
+  <link rel="stylesheet" href="vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.serializeJSON/3.2.1/jquery.serializejson.min.js"
+    integrity="sha512-SdWDXwOhhVS/wWMRlwz3wZu3O5e4lm2/vKK3oD0E5slvGFg/swCYyZmts7+6si8WeJYIUsTrT3KZWWCknSopjg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar col-lg-12 col-12 fixed-top d-flex flex-row" style="background: white;">
+
+      <h3 class="font-weight-bold" style="padding-left: 2em;color:#4B49AC;">True CV</h3>
+      <br><br>
+    </nav>
+    <div class="container page-body-wrapper justify-content-md-center">
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row justify-content-md-center">
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Company Profile</h4>
+                  <form class="forms-sample" id="company_reg">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Company ID</label>
+                      <input type="text" class="form-control" id="company_name" name="compid" placeholder="Company ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Company Name</label>
+                      <input type="text" class="form-control" id="company_name" name="compname" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail3">Email address</label>
+                      <input type="email" class="form-control" id="company_email" name="compmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword4">Password</label>
+                      <input type="password" class="form-control" id="password" name="comppwd" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword4">Business Stream</label>
+                      <input type="text" class="form-control" id="password" name="compbus"
+                        placeholder="Business Stream">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword4">Website URL</label>
+                      <input type="text" class="form-control" id="password" name="compurl" placeholder="Website URL">
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <label for="exampleTextarea1">Company description</label>
+                      <textarea class="form-control" id="exampleTextarea1" name="compdesc" rows="4"></textarea>
+                    </div>
+                    <input id="cregsubmit" type="submit" class="btn btn-primary mr-2">
+
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                  <a href="/adminLogin" id="clicker" style="visibility: hidden"></a>
+                  <script>
+
+
+                    $('form').on('submit', function (e) {
+                      e.preventDefault()
+                      console.log($(this).serialize());
+
+                      $.ajax({
+                        url: '/companyFormSubmit',
+                        type: 'POST',
+                        data: $(this).serialize()
+                      }).done(response => {
+                        console.log(response['stat']);
+                        console.log(response['stat'])
+                        if (response['stat'] == 'exist') {
+
+                          alert('User Already Exist');
+
+                        }
+                        if (response['stat'] == 'right') {
+                          document.getElementById('clicker').click();
+                        }
+                      });
+                    })
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+
+
+</body>
+
+</html>
