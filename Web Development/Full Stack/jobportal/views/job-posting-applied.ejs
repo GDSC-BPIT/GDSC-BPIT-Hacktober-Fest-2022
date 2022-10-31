@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job Portal</title>
+    <!-- plugins:css -->
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/feather/feather.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="vendors/feather/feather.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <!-- endinject -->
+
+</head>
+
+<body>
+    <div class="container-scroller">
+        <nav class="navbar col-lg-12 col-12 fixed-top d-flex flex-row" style="background: white;">
+
+            <h3 class="font-weight-bold" style="padding-left: 2em;color:#4B49AC;">True CV</h3>
+            <br><br>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/companyDashboard">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/companyJobPostings" aria-expanded="false">
+                            <i class="icon-layout menu-icon"></i>
+                            <span class="menu-title">Job Openings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/companyJobPostNew">
+                            <i class="icon-paper menu-icon"></i>
+                            <span class="menu-title">Post A New Job</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <form>
+                    <div class="content-wrapper">
+                        <div class="row">
+                            <div class="col-lg-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">List Of candidates Who All Applied</h4>
+
+                                        <div class="table-responsive">
+
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-primary">User Id</th>
+                                                        <th class="text-primary">First Name</th>
+                                                        <th class="text-primary">Last Name</th>
+                                                        <th class="text-primary">Gender</th>
+                                                        <th class="text-primary">Phone Number</th>
+                                                        <th class="text-primary">Full Profile</th>
+                                                    </tr>
+                                                </thead>
+                                                <% if(details!=0) { %>
+                                                    <tbody>
+                                                        <% for(var i=0; i < details['seeker_details'].length; i++) { %>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <%= details['seeker_details'][i].user_id %>
+                                                                </td>
+                                                                <td>
+                                                                    <%= details['seeker_details'][i].first_name %>
+                                                                </td>
+                                                                <td>
+                                                                    <%= details['seeker_details'][i].last_name %>
+                                                                </td>
+                                                                <td>
+                                                                    <%= details['seeker_details'][i].gender %>
+                                                                </td>
+                                                                <td>
+                                                                    <%= details['seeker_details'][i].phone_no %>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="modal fade"
+                                                                        id="modalContactForm<%= details['seeker_details'][i].user_id %>"
+                                                                        tabindex="-1" role="dialog"
+                                                                        aria-labelledby="myModalLabel"
+                                                                        aria-hidden="true">
+                                                                        <div class="modal-dialog" role="document">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header text-center">
+                                                                                    <h4
+                                                                                        class="modal-title w-100 font-weight-bold">
+                                                                                        <%= details['seeker_details'][i].user_id
+                                                                                            %> Profile
+                                                                                    </h4>
+                                                                                    <button type="button" class="close"
+                                                                                        data-dismiss="modal"
+                                                                                        aria-label="Close">
+                                                                                        <span
+                                                                                            aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="modal-body mx-3">
+                                                                                    <div class="md-form mb-5">
+                                                                                        <% for(var j=0; j <
+                                                                                            details['education_details'][i].length;
+                                                                                            j++) { %>
+                                                                                            <%if (j==0) { %>
+                                                                                                <label
+                                                                                                    data-error="wrong"
+                                                                                                    data-success="right"
+                                                                                                    for="form34">
+                                                                                                    <h5>Education
+                                                                                                        Details</h5>
+                                                                                                </label>
+                                                                                                <% } %>
+
+
+                                                                                                    <ul>
+                                                                                                        <li>
+                                                                                                            Education
+                                                                                                            Level
+                                                                                                            - <%=
+                                                                                                                details['education_details'][i][j].educational_level
+                                                                                                                %>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            Major -
+                                                                                                            <%= details['education_details'][i][j].major
+                                                                                                                %>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            Institute
+                                                                                                            Name -
+                                                                                                            <%= details['education_details'][i][j].institute_name
+                                                                                                                %>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            Starting
+                                                                                                            Date -
+                                                                                                            <%= details['education_details'][i][j].starting_date
+                                                                                                                %>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            End Date
+                                                                                                            - <%=
+                                                                                                                details['education_details'][i][j].completion_date
+                                                                                                                %>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            Percentage
+                                                                                                            - <%=
+                                                                                                                details['education_details'][i][j].percentage
+                                                                                                                %>
+                                                                                                        </li>
+
+                                                                                                    </ul>
+
+                                                                                                    <hr>
+
+
+                                                                                                    <% } %>
+
+                                                                                                        <% for(var k=0;
+                                                                                                            k<
+                                                                                                            details['exp_details'][i].length;
+                                                                                                            k++) { %>
+                                                                                                            <%if (k==0)
+                                                                                                                { %>
+                                                                                                                <label
+                                                                                                                    data-error="wrong"
+                                                                                                                    data-success="right"
+                                                                                                                    for="form34">
+                                                                                                                    <h5>Experience
+                                                                                                                        Details
+                                                                                                                    </h5>
+                                                                                                                </label>
+                                                                                                                <% } %>
+                                                                                                                    <ul>
+
+                                                                                                                        <li>Job
+                                                                                                                            Title
+                                                                                                                            -
+                                                                                                                            <%= details['exp_details'][i][k].job_title
+                                                                                                                                %>
+                                                                                                                        </li>
+
+                                                                                                                        <li>
+                                                                                                                            Company
+                                                                                                                            Name
+                                                                                                                            -
+                                                                                                                            <%= details['exp_details'][i][k].company_name
+                                                                                                                                %>
+                                                                                                                        </li>
+                                                                                                                        <li>
+                                                                                                                            Starting
+                                                                                                                            Date
+                                                                                                                            -
+                                                                                                                            <%= details['exp_details'][i][k].starting_date
+                                                                                                                                %>
+                                                                                                                        </li>
+                                                                                                                        <li>
+                                                                                                                            End
+                                                                                                                            Date
+                                                                                                                            -
+                                                                                                                            <%= details['exp_details'][i][k].completion_date
+                                                                                                                                %>
+                                                                                                                        </li>
+                                                                                                                        <li>
+                                                                                                                            Job
+                                                                                                                            Description
+                                                                                                                            -
+                                                                                                                            <%= details['exp_details'][i][k].description
+                                                                                                                                %>
+                                                                                                                        </li>
+
+                                                                                                                        <hr>
+                                                                                                                    </ul>
+
+                                                                                                                    <% }
+                                                                                                                        %>
+
+
+                                                                                    </div>
+
+
+
+
+                                                                                    <!-- <div class="md-form">
+                                                                                <label data-error="wrong"
+                                                                                    data-success="right"
+                                                                                    for="form8">Your
+                                                                                    message</label>
+                                                                                <textarea type="text" id="form8"
+                                                                                    class="md-textarea form-control"
+                                                                                    rows="4"></textarea>
+
+                                                                            </div> -->
+
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a href="" class="btn btn-outline-primary btn-sm"
+                                                                        data-toggle="modal"
+                                                                        data-target="#modalContactForm<%= details['seeker_details'][i].user_id %>">
+                                                                        Click Here</a>
+                                                                    <br>
+                                                                    <br><br>
+                                                                </td>
+
+                                                            </tr>
+                                                            <% } %>
+
+
+                                                    </tbody>
+                                                    <% } %>
+
+                                            </table>
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <!-- <input type="submit" value="Save Changes" class="btn btn-outline-primary btn-md float-right"
+                                style="margin-left: 72em; margin-bottom: 3em;"> -->
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script src="js/dataTables.select.min.js"></script>
+
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.roundedBarCharts.js"></script>
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="vendors/select2/select2.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <!-- <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script> -->
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js/file-upload.js"></script>
+    <script src="js/typeahead.js"></script>
+    <script src="js/select2.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+</html>

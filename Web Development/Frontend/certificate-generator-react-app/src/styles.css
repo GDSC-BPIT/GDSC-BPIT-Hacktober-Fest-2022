@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Hachi Maru Pop", cursive;
+  display: flex;
+  padding: 15px;
+  /* text-align: center; */
+}
+.App .Meta {
+  flex-grow: 1;
+  padding: 15px;
+}
+.App .Meta input {
+  font-family: inherit;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.App .Meta button {
+  padding: 10px 15px;
+  border: 2px solid #87ceeb;
+  background-color: #33f3fb;
+  font-family: inherit;
+  margin: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.App #certificateWrapper {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: relative;
+  margin: 15px;
+}
+.App #certificateWrapper img {
+  display: block;
+}
+.App #certificateWrapper p {
+  margin: 0px;
+  font-family: "Staatliches", cursive;
+  position: absolute;
+  top: 300px;
+  left: 95px;
+  font-size: 40pt;
+}
