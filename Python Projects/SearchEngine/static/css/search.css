@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+body{
+    margin: 0 !important;
+} 
+.mtop{
+    margin-top: 1%;
+    padding-left: 1%;
+}
+.search-heading
+{
+    background: -webkit-linear-gradient(90deg,rgb(107, 215, 234),rgb(127, 198, 234),rgb(163, 222, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.width-change {
+    width: 40% !important;
+    margin-left: 5%;
+    /* box-shadow: 5px 10px 8px 10px #aab9ba; */
+}
+.bgchange
+{
+    background: -webkit-linear-gradient(45deg,rgb(107, 215, 234),rgb(186, 217, 233),rgb(163, 222, 233));
+    width: 20%;
+    color: black !important;
+}
+.categories
+{
+margin-left: 3%;
+}
+.movablenavbar
+{
+    margin-top: 1%;
+    margin-left: 16%;
+}
+.movablenavbarright
+{
+    margin-right: 2%;
+}
+.bottom-border
+{
+    border-bottom: 2px orange !important;
+}
+.movablenavbar-right
+{
+    margin-left: 15%;
+}
+.movablenavbar-bottom
+{
+    margin-top: 3%;
+    width: 45% !important;
+    word-break: break-all;
+}
+.movablenavbar-bottom a
+{
+    color:rgb(75, 69, 207) !important;
+    font-size: 1.2em;
+}
+.movablenavbar-bottom a :visited
+{
+    color:rgb(42, 38, 116) !important;
+}
+.movablenavbar-bottom a :hover
+{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+.colorchangetoblack
+{
+    color: rgb(38, 32, 32);
+}
+.linktext
+{
+    font-size: 0.95em;
+    color: rgb(84, 91, 84);
+    font-family:Arial, Helvetica, sans-serif;
+}

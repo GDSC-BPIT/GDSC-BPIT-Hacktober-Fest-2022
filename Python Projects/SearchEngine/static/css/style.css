@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+body{
+    margin: 0 !important;
+background: linear-gradient(-45deg,rgb(42, 52, 42),rgb(71, 71, 65),rgb(25, 41, 57)) no-repeat !important;
+} 
+.search-heading
+{
+    background: -webkit-linear-gradient(90deg,rgb(107, 215, 234),rgb(186, 217, 233),rgb(163, 222, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.width-change {
+    width: 50% !important;
+    height: 20% !important;
+    margin-left: 25% !important;
+}
+.bgchange
+{
+    background: -webkit-linear-gradient(45deg,rgb(107, 215, 234),rgb(186, 217, 233),rgb(163, 222, 233));
+    width: 20%;
+    color: black !important;
+}
