@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACOMETRY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d5df1a362c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <Section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="logo.png"> </a>
+            <div class="nav-items" id="navItems">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                   <li><a href="index.html">HOME</a> </li> 
+                   <li><a href="about.html">ABOUT</a> </li> 
+                   <li><a href="domain.html">DOMAINS</a> </li> 
+                   <li><a href="blog.html">BLOGS</a> </li> 
+                   <li><a href="contact.html">CONTACT</a> </li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <h1>Domains</h1>
+    </Section>
+<!---domains--->
+<section class="domain">
+    <h1>Domains you can explore</h1>
+    <p>Here you will find some amazing topics which you can read.</p>
+
+    <div class="row">
+        <div class="domain-col">
+            <h3>Black Hole</h3>
+            <p>In this section, you can get a deep knowledge about Black Holes.<br>
+                A black hole is a region of spacetime where gravity is so strong that nothing, no particles or even electromagnetic radiation such as light can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.
+            </p>
+        </div>
+        <div class="domain-col">
+            <h3>Big Bang Theory</h3>
+            <p>In this section, you can get a deep knowledge about Big Bang Theory.<br>
+                Big Bang Theory is the idea that the universe began as just a single point, then expanded and stretched to grow as large as it is right now and it is still stretching!
+            </p>
+        </div>
+        <div class="domain-col">
+            <h3>The Multi-verse Theory</h3>
+            <p>In this section, you can get a deep knowledge about Black Holes.<br>
+                The multiverse is a hypothetical group of multiple universes.Together, these universes comprise everything that exists: the entirety of space, time, matter, energy, information, and the physical laws and constants that describe them. The different universes within the multiverse are called "parallel universes", "other universes", "alternate universes", or "many worlds".
+            </p>
+        </div>
+    </div>
+</section>
+<section class="cool-facts">
+    <h1>Some Amazing Facts about space</h1>
+
+    <div class="row">
+        <div class="domain-col">
+            <h3> THE HOTTEST PLANET IN OUR SOLAR SYSTEM IS 450° C.</h3>
+            <p>Venus is the hottest planet in the solar system and has an average surface temperature of around 450° C. Did you know that Venus isn't the closest planet to the sun?  That is Mercury.  You would think that Mercury would then be the hottest, but Mercury has no atmosphere (which regulates temperature), resulting in big fluctuations. </p>
+        </div>
+        <div class="domain-col">
+            <h3>ONE DAY ON VENUS IS LONGER THAN ONE YEAR.</h3>
+            <p>Venus has a slow axis rotation which takes 243 Earth days to complete its day. The orbit of Venus around the Sun is 225 Earth days, making a year on Venus 18 days less than a day on Venus.</p>
+        </div>
+        <div class="domain-col">
+            <h3>THERE IS A PLANET MADE OF DIAMONDS</h3>
+            <p>There's a planet made of diamonds twice the size of earth The "super earth," aka 55 Cancri e, is most likely covered in graphite and diamond.Paying a visit to that planet would probably pay for the $12 million dollar space suit needed to get there!</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- -----footer------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>This website is solely made for the purpose of getting people know more about space and enjoy learning about space.</p>
+    Connect with us.
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i></p>
+</section>
+<!---JAVASCRIPT FOR THE TOGGLE MENU---->
+    <Script>
+        var navItems= document.getElementById("navItems");
+        function showMenu(){
+            navItems.style.right="0";
+        }
+        function hideMenu(){
+            navItems.style.right="-200px";
+        }
+    </Script>
+</body>
+</html>

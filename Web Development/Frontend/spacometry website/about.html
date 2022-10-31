@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACOMETRY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d5df1a362c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <Section class="sub-header">
+        <nav>
+            <a href="index.html"><img class="logo" src="logo.png"> </a>
+            <div class="nav-items" id="navItems">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                   <li><a href="index.html">HOME</a> </li> 
+                   <li><a href="about.html">ABOUT</a> </li> 
+                   <li><a href="domain.html">DOMAINS</a> </li> 
+                   <li><a href="blog.html">BLOGS</a> </li> 
+                   <li><a href="contact.html">CONTACT</a> </li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+         <h1>ABOUT US</h1>
+    </Section>
+<!-- -------about us content------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>SPACOMETRY-STUDY OF SPACE</h1>
+           <p> Spacometry is a private company made with the purpose of providing useful knowledge to its users about space.</p>
+            The company has its headquarters in New Delhi, India.<br><br>
+           <a class="visit-button explore-btn" href="">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/company.jpg">
+        </div>
+    </div>
+</section>
+<!-- -----footer------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>This website is solely made for the purpose of getting people know more about space and enjoy learning about space.</p>
+    Connect with us.
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i></p>
+</section>
+<!---JAVASCRIPT FOR THE TOGGLE MENU---->
+    <Script>
+        var navItems= document.getElementById("navItems");
+        function showMenu(){
+            navItems.style.right="0";
+        }
+        function hideMenu(){
+            navItems.style.right="-200px";
+        }
+    </Script>
+</body>
+</html>
